@@ -3,6 +3,7 @@
 // But I won't say HI (reject) if your number is not even.
 
 document.getElementById("validate").addEventListener("click", function(){
+     document.getElementById("odd").innerHTML = "Processing..."
     let yourData = document.getElementById("myForm");
     let yourNum = yourData.elements["userNumber"].value;
 
@@ -13,7 +14,7 @@ document.getElementById("validate").addEventListener("click", function(){
                 
             } 
             else{
-                reject();
+                setTimeout(function(){reject();}, 2000);            
             }
         });
     };
