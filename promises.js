@@ -22,7 +22,7 @@ document.getElementById("validate").addEventListener("click", function(){
     even(yourNum).then(yeah).catch(no);
 
     function yeah() {
-       alert("Hi!!!\n:)");
+       alert("Hi!!!\n:)\nyour number is even. Promise resolved!");
     }
 
     function no() {
